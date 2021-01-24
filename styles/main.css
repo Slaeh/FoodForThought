@@ -1,80 +1,39 @@
-* {
-    box-sizing: border-box;
-}
-.container{
+*{
+    font-family: 'Optima', monospace;
+    color: Blue; 
     text-align: center;
 }
 
-.card {
-    margin: 0 auto;
-    float: none; 
-    margin-bottom: 10px; 
-    width: 300px;
-	display: inline-block;
-	margin: 1rem;
-	border-radius: 4px;
-	box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
-	transition: all .2s ease;
-	background: #fff;
-	position: relative;
-	overflow: hidden;
-}
-
- .card :onhover {
-	transform: translateY(-4px);
-    box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
-}
-
-.card-img-top {
-    width: 100%;
-    height: 10vw;
-    object-fit: cover;
-}      
-
-.logo{
-    height: 100px;
-    text-align: center;
-    border-radius: 200px;
-}
-
-.row {
-    display: flex;
-  }
-  
-.column {
-    flex: 10%;
-    padding: 10px;
-}
-
-img{
-    block-size:300px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-    float :none;
-}
-
-.col-md-12{
-    background-color: lightblue;
-     max-width: 50%; 
-     right:auto;
-     left:auto;
-     z-index: -100;
-    /* height: max-content; */
-    /* object-fit: cover; */
-    /* background-size: cover; */
-}
-
-.heading{
+ul{
+    list-style-type: none;
     text-align: center;
 }
 
-.indexP{
+}
+body{
+    
+    /* background-color:lightblue; */
+    background-image: linear-gradient(white, lightblue); 
+    overflow-x: hidden; 
+    overflow-y: scroll; 
     text-align: center;
 }
 
-.h1Heading{
-    text-align: center;
+  h1{
+    /* margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    text-shadow: -2px 2px 3px #ff2d95;
+    font-size: 50px;
+    text-align :center; */
+    color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+	letter-spacing: 5px;
+    font: 80px 'MisoRegular';
+} 
+
+li{
+    list-style-type:none;
 }
