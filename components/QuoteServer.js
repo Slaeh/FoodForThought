@@ -95,6 +95,7 @@ export default function QuoteServer(props) {
                     </button>
                 </div>
             }
+            <Footer />
         </div>
     )
 }
