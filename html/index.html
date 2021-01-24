@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Food For Thought</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -10,6 +10,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/foodforthought/styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+  <link rel = "icon" href = "/foodforthought/animations/thoughtBubble.png"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   
   <!-- Script for home page animation! -->
   <script>var TxtRotate = function(el, toRotate, period) {
@@ -72,39 +78,48 @@
 </head>
 
 <body>
-    <section id="banner">
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                  <img src="/foodforthought/animations/wave.png" class="img-fluid"></img>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="/foodforthought/animations/wave.png" class="img-fluid"></img>
-        </div> -->
-    <h1 class="h1Heading">Food For Thought</h1>
+  <!-- var textWrapper = document.querySelector('.ml6 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  }); -->
+  <div id="page-container">
+    <h1 class="h1Heading">
+      <span class="text-wrapper">
+        <span class="letters">Food For Thought</span>
+      </span>
+    </h1>
     <br>
-    <h2 class="heading">Hungry for 
-      <span class="txt-rotate" data-period="2000" data-rotate='[ "motivation?", "inspiration?", "encouragement?", "insight?"]'></span>
-    </h2>
+    <strong><h2 class="heading">Hungry for 
+      <span class="txt-rotate" data-period="2000" data-rotate='[ " motivation?", " inspiration?", " encouragement?", " insight?"]'></span>
+    </h2></strong>
     </section>
     <br>
-    <img src="/foodforthought/animations/delivery.gif"></img>
-    <h2 class="indexP">Click below for a delivery!</h2>
-    <a class="btn btn-primary" href="#" role="button">Link</a>
-
-
+    <img src="/foodforthought/animations/delivery.gif" class="deliveryBoy"></img>
     <br>
-    <footer class="social-footer">
-        <div class="row">
-          <div class="column">
-            <a href="#" target="_blank"><img src="/foodforthought/logos/github.svg" class="logo"></a>
-          </div>
-          <div class="column">
-            <a href="https://devpost.com/" target="_blank"><img src="/foodforthought/logos/devpost.svg" class="logo"></a>
-          </div>
-        </div>
-    </footer>        
+    <h2 class="indexP">Order a quote below!</h2>
+    <br>
+    <center><a class="btn btn-primary" href="/foodforthought/html/quotes.html" role="button">Order</a></center>
+  </div>
+  <br>
+    <!-- Start Footer -->
+    <div class=container-fluid>
+    <footer class="social">
+      <a href="https://github.com/Slaeh/FoodForThought" target="_blank"><img src="/foodforthought/logos/github.svg" class="logo"></a>
+      <a href="https://devpost.com/" target="_blank"><img src="/foodforthought/logos/devpost.svg" class="logo"></a>
+    </footer>  
+    </div>      
 </body>
 </html>
