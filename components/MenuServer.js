@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Footer from './Footer.js'
 
 async function getError(res) {
     if (res.headers.get('Content-Type').includes('application/json')) {
@@ -50,39 +51,65 @@ export default function MenuServer() {
     return (
       <>
         <div> 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <h1> Cards here </h1> 
             <button
-                            type="button"
-                            onClick={fetchQuotes}
-                            >Get Menu!</button>
+                type="button"
+                onClick={fetchQuotes}
+                >Get Menu!</button>
             {success &&
                 <div className="Menu">
-                    <div>
-                        <p>Card 1</p>
-                        <p>{threeQuote.quote0.text}</p>
+                    <div className="card" style={{width: "400px"}}>
+                        
+                        <img 
+                            className="card-img-top" 
+                            src="/images/img1.jpg" 
+                            alt="Card image" 
+                            style={{width: "100%", maxHeight: "300px"}}/>
+                        <div className="card-body">
+                            <p className="card-text">{threeQuote.quote0.text}</p>
+                        </div>
                         <p>-{threeQuote.quote0.author}</p>
                         <button
                             type="button"
                             onClick={()=>writeQuotes(threeQuote.quote0)}
-                            >select</button>
+                            className="btn btn-primary btn-lg"
+                            >Select</button>
                     </div>
-                    <div>
-                        <p>Card 2</p>
-                        <p>{threeQuote.quote1.text}</p>
+                    <div className="card" style={{width: "400px"}}>
+                        
+                        <img 
+                            className="card-img-top" 
+                            src="/images/img2.jpg" 
+                            alt="Card image" 
+                            style={{width: "100%"}}/>
+                         <div className="card-body">
+                            <p className="card-text">{threeQuote.quote1.text}</p>
+                        </div>
                         <p>-{threeQuote.quote1.author}</p>
                         <button
-                            type="button"
+                            href="/"
                             onClick={()=>writeQuotes(threeQuote.quote1)}
-                            >select</button>
+                            className="btn btn-primary btn-lg"
+                            >Select</button>
+                            
                     </div>
-                    <div>
-                        <p>Card 3</p>
-                        <p>{threeQuote.quote2.text}</p>
+                    <div className="card" style={{width: "400px"}}>
+                        
+                        <img 
+                            className="card-img-top" 
+                            src="/images/img3.jpg" 
+                            alt="Card image" 
+                            style={{width: "100%"}}/>
+                        <div className="card-body">
+                            <p className="card-text">{threeQuote.quote2.text}</p>
+                        </div>
                         <p>-{threeQuote.quote2.author}</p>
                         <button
                             type="button"
                             onClick={()=>writeQuotes(threeQuote.quote2)}
-                            >select</button>
+                            className="btn btn-primary btn-lg"
+                            >Select</button>
                     </div>
                 </div>
             }
@@ -107,20 +134,22 @@ export default function MenuServer() {
                 error && 
                 <div>
                     Something has gone wrong: {error.message}
-                    <a onClick={reset}> try again here</a>
+                    <a onClick={reset}> Try again here</a>
                 </div>
 
             }
             {
                 completion &&
                 <div>
-                    Thank you for giving back to the community!
+                    <p style={{borderRadius: "15px",fontWeight: "bold",fontSize: "20px",margin: "20px",border: "black solid 1px", padding: "40px"}}>Thank you for giving back to the community!</p>
+                    <Link href="/"><button className="btn btn-primary btn-lg">Home Page</button></Link>
                 </div>
             }
         </div>
           
             
-        
+        <Footer />
       </>
+      
     );
   }
