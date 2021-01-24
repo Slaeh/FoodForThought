@@ -56,12 +56,15 @@ img{
     float :none;
 }
 
-.col-md-6{
+.col-md-12{
     background-color: lightblue;
-    max-width: 100%;
-    height: max-content;
-    object-fit: cover;
-    background-size: cover;
+     max-width: 50%; 
+     right:auto;
+     left:auto;
+     z-index: -100;
+    /* height: max-content; */
+    /* object-fit: cover; */
+    /* background-size: cover; */
 }
 
 .heading{
@@ -69,5 +72,9 @@ img{
 }
 
 .indexP{
+    text-align: center;
+}
+
+.h1Heading{
     text-align: center;
 }
