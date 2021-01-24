@@ -4,7 +4,7 @@
 } 
 
 body{
-    background-image: url(/foodforthought/animations/bg-blue.jpg);
+    background-image: url(/animations/bg-white.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -62,6 +62,7 @@ body{
 
 .heading{
     text-align: center;
+    top:10%;
 }
 
 .indexP{
@@ -72,6 +73,8 @@ body{
     text-align: center;
     font-family: Yusei Magic;
     font-size: 65px;
+    
+    
 }
 
  .social{
@@ -96,9 +99,107 @@ p{
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
+    top:auto;
+    height:0px;
+    animation-name: topInflate;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
   }
   
 .h1Heading .letter {
     display: inline-block;
     line-height: 1em;
   }
+
+.lcurtain{
+    width: 50%;
+    height:100%;
+    background-color: red;
+    position: fixed;
+    z-index: 5;
+    left:0px;
+    top:0px;
+    animation-name: curtains;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    border-radius: 0,5%,5%,0;
+}
+.rcurtain{
+    width: 50%;
+    height:100%;
+    background-color: red;
+    position: fixed;
+    z-index: 50;
+    right:0px;
+    top:0px;
+    animation-name: curtains;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    border-radius: 5%,0,0,5%;
+}
+
+.curtainLeft1{
+    background-color: red;
+    animation-delay: 0.2s;
+    z-index: 50;
+}
+.curtainRight1{
+    background-color: red;
+    animation-delay: 0.2s;
+    z-index: 50;
+}
+.curtainLeft2{
+    background-color:  rgb(211, 0, 0);
+    animation-delay: 0.4s;
+    z-index: 49;
+}
+.curtainRight2{
+    background-color: rgb(211, 0, 0);
+    animation-delay: 0.4s;
+    z-index: 49;
+}
+.curtainLeft3{
+    background-color: rgb(179, 0, 0);
+    animation-delay: 0.6s;
+    z-index: 48;
+}
+.curtainRight3{
+    background-color: rgb(179, 0, 0);
+    animation-delay: 0.6s;
+    z-index: 48;
+}
+
+.Footer{
+    margin-bottom:0px;
+}
+.indexInnerContent{
+    background-color:white;
+    border-radius:1%;
+    border-style: double;
+    border: black, visible;
+    width: 50%;
+    margin:auto;
+    height: 60%;
+}
+.fetchQuoteBTN{
+
+}
+.recieveQuoteBTN{
+    
+}
+
+@keyframes curtains {
+    0%   {width:50%}
+    100% {width:20%}
+}
+
+@keyframes topInflate {
+    0%   {height:0px}
+    100% {height:1.2em}
+}
