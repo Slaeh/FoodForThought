@@ -1,0 +1,104 @@
+* {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+
+body{
+    background-image: url(/foodforthought/animations/bg-blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid{
+    text-align: center;
+}
+
+.card {
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px; 
+    width: 300px;
+	display: inline-block;
+	margin: 1rem;
+	border-radius: 4px;
+	box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+	transition: all .2s ease;
+	background: #fff;
+	position: relative;
+    overflow: hidden;
+    align-items: center;
+    flex:auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}    
+
+.logo{
+ height: 100px; 
+    width: 100%; 
+    text-align: center;
+}
+
+.row {
+    display: flex;
+} 
+  
+.column {
+    flex: 2%; 
+    padding: 10px;
+}
+
+.deliveryBoy{
+    block-size:300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    float :none;
+} 
+
+.heading{
+    text-align: center;
+}
+
+.indexP{
+    text-align: center;
+}
+
+.h1Heading{
+    text-align: center;
+    font-family: Yusei Magic;
+    font-size: 65px;
+}
+
+ .social{
+    display: block;
+    width: 20%;
+    margin: auto;
+} 
+
+.quoteHeading{
+    font-family: Yusei Magic;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30;
+}
+
+.h1Heading .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+.h1Heading .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
