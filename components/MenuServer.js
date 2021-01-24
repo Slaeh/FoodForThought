@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+
 async function getError(res) {
     if (res.headers.get('Content-Type').includes('application/json')) {
       const data = await res.json();
