@@ -7,6 +7,7 @@ export default async function writeQuote(req, res) {
         const fileContents = fs.readFileSync(filePath, 'utf8')
         let result = JSON.parse(fileContents)
         let newObj = req.body
+        newObj.date = new Date().toUTCString()
         result.masterlist.push(newObj);
         let b = fs.writeFileSync( filePath, JSON.stringify(result), "utf8")
         res.status(200).json({ message:"Thank You for paying it forward!!" })
