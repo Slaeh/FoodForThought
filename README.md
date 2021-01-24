@@ -5,7 +5,7 @@ Our project allows users to recieve a quote selected by a previous user, as a em
 Link to our site hosted by Vercel:
 
 Created by
-Harjit Liyal
-Edward Paez
-Michael Cai
+Harjit Liyal,
+Edward Paez,
+Michael Cai,
 Umadevi Sookhai
