@@ -49,7 +49,7 @@ export default function QuoteServer(props) {
             delivery: true,
             welcome:false,
             success: false
-            });
+        });
     }
   
     return (
@@ -57,21 +57,35 @@ export default function QuoteServer(props) {
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             {success && 
                 
-                <div>
+                <div >
                 <Navbar/> 
+                <div className="quoteServerResult">
+                <h1 className="h1Heading">
+                <span className="text-wrapper">
+                    <span className="letters">Food For Thought</span>
+                </span>
+                </h1>
+                <p className="indexSubtext">This meal is free! A kind stranger decided to pay for this meal!</p>
+                <br/>
                 <h1>{quote}</h1> 
                 <p>-{personSelector}</p>
                 <p>Date recommended: {dateSuggested}</p>
                 <br/>
                 <p>Would you like to pay it forward for our next guest?</p>
                 <button>
-                <Link href="/menu">Click Here</Link>
+                <Link href="/menu">Click Here For Our Menu</Link>
                </button>
+               </div>
                 </div>
                  
             }
             { welcome &&
                 <div>
+                    <h1 className="h1Heading">
+                    <span className="text-wrapper">
+                        <span className="letters">Food For Thought</span>
+                    </span>
+                    </h1>
                     <br/>
                     <strong><h2 className="heading">Wishing for some soul food?
                     </h2></strong>
@@ -90,6 +104,7 @@ export default function QuoteServer(props) {
                     <audio control autoplay>
                         <source src="/audio/motorbike.mp3" type="audio/mpeg"/>
                     </audio>
+                    <br/>
                     <button onClick={fetchQuote} className="btn btn-primary recieveQuoteBTN">
                         Your order has arrived!
                     </button>

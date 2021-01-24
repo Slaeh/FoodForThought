@@ -26,11 +26,6 @@ export default function Home() {
                 <br/>
                 <br/>
                 <br/>
-        <h1 className="h1Heading">
-          <span className="text-wrapper">
-            <span className="letters">Food For Thought</span>
-          </span>
-        </h1>
         <div className= "indexInnerContent">
             <QuoteServer/>
         </div>
