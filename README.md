@@ -5,7 +5,7 @@ Our project allows users to recieve a quote selected by a previous user, as a em
 Link to our site hosted by Vercel: https://food-for-thought-psi.vercel.app/
 
 Created by
-Harjit Liyal : https://github.com/Slaeh
-Edward Paez : https://github.com/epaez1996
-Michael Cai : https://github.com/michael0419
-Umadevi Sookhai : https://github.com/Thandor-droid
+Harjit Liyal : https://github.com/Slaeh ,
+Edward Paez : https://github.com/epaez1996 , 
+Michael Cai : https://github.com/michael0419 , 
+Umadevi Sookhai : https://github.com/Thandor-droid 
